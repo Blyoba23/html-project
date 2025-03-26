@@ -3,44 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Навчальний проект з HTML для вивчення тегів та атрибутів">
-    <title>HTML Теги та Атрибути</title>
+    <meta name="description" content="Gaming Website - News, Reviews, and Tips">
+    <title>Gaming Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, footer {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Ласкаво просимо на мою першу веб-сторінку!</h1>
-        <p>Це навчальний проєкт для вивчення основ HTML.</p>
+        <h1>Gaming Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#news">News</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Зміст</h2>
-            <ul>
-                <li><a href="#about">Про мене</a></li>
-                <li><a href="#gallery">Галерея</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-            </ul>
+        <section id="news">
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest gaming news and trends.</p>
         </section>
 
-        <section id="about">
-            <h2>Про мене</h2>
-            <p>Привіт! Мене звати <strong>Студент</strong>, і я вивчаю <em>HTML</em> та <u>веб-розробку</u>.</p>
+        <section id="reviews">
+            <h2>Game Reviews</h2>
+            <p>Read our latest reviews on popular games.</p>
         </section>
 
         <section id="gallery">
-            <h2>Галерея</h2>
-            <p>Ось одне з моїх улюблених зображень:</p>
-            <img src="https://via.placeholder.com/300" alt="Приклад зображення">
+            <h2>Gallery</h2>
+            <p>Check out screenshots and fan art.</p>
         </section>
 
-        <section id="contacts">
-            <h2>Контакти</h2>
-            <p>Зв'яжіться зі мною за допомогою електронної пошти: <a href="mailto:student@example.com">student@example.com</a></p>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Моя перша веб-сторінка. Усі права захищено.</p>
+        <p>&copy; 2025 Gaming Hub. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
