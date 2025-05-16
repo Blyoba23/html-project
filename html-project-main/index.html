@@ -1,144 +1,73 @@
 <!DOCTYPE html>
-<div class="absolute-banner">Breaking News</div>
-<div class="fixed-navbar">Gaming Hub</div>
-<h2 class="sticky-title">Latest Games</h2>
-<div class="game-card">
-  <h3>Cyberpunk 2077</h3>
-</div>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaming Website - News, Reviews, and Tips">
-    <title>Gaming Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        header, footer {
-            background: #333;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            margin: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>РўРµСЃС‚РѕРІР° СЃС‚РѕСЂС–РЅРєР°</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Gaming Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#news">News</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="news">
-            <h2>Latest News</h2>
-            <p>Stay updated with the latest gaming news and trends.</p>
-        </section>
-
-        <section id="reviews">
-            <h2>Game Reviews</h2>
-            <p>Read our latest reviews on popular games.</p>
-        </section>
-
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <p>Check out screenshots and fan art.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Gaming Hub. All Rights Reserved.</p>
-    </footer>
+  <nav class="fixed-navbar">
+    <a href="#">Р“РѕР»РѕРІРЅР°</a>
+    <a href="#">Р†РіСЂРё</a>
+  </nav>
+  <main class="main-content">
+    <article class="game-card">
+      <h2>Test Game</h2>
+      <p>РћРїРёСЃ РіСЂРё...</p>
+      <button>Р“СЂР°С‚Рё</button>
+    </article>
+  </main>
 </body>
 </html>
 
-  <!-- Підключення normalize.css (з CDN) -->
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <!-- Р¤С–РєСЃРѕРІР°РЅР° РЅР°РІС–РіР°С†С–СЏ (Flexbox) -->
+  <nav class="fixed-navbar">
+    <a href="#">рџЏ  Р“РѕР»РѕРІРЅР°</a>
+    <a href="#">рџЋ® Р†РіСЂРё</a>
+    <a href="#">рџ“Љ РЎС‚Р°С‚РёСЃС‚РёРєР°</a>
+    <a href="#">в„№пёЏ РџСЂРѕ РЅР°СЃ</a>
+  </nav>
 
-  <!-- Підключення власного стилю -->
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+  <!-- Р‘Р°РЅРµСЂ -->
+  <div class="absolute-banner">рџ”Ґ Р—РЅРёР¶РєРё РґРѕ -70%!</div>
 
-  <h1>Вітаємо на геймерському сайті!</h1>
-  <p>Тут будуть ігри, новини та інше.</p>
-
-</body>
-</html>
-
- <!-- Шапка сайту -->
-  <header>
-    <h1>Геймерський портал</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Ігри</a></li>
-        <li><a href="#">Новини</a></li>
-        <li><a href="#">Контакти</a></li>
-      </ul>
-    </nav>
+  <!-- Р—Р°РіРѕР»РѕРІРѕРє СЃС‚РѕСЂС–РЅРєРё -->
+  <header style="padding-top: 70px;">
+    <h1 class="sticky-title">Game HUD</h1>
+    <p>РўРІС–Р№ РїРѕСЂС‚Р°Р» Сѓ СЃРІС–С‚ С–РіРѕСЂ</p>
   </header>
 
-  <!-- Основний контент -->
-  <main>
-    <section>
-      <h2>Останні новини</h2>
-      <p>Новий сезон Fortnite вже стартував!</p>
-    </section>
+  <!-- РћСЃРЅРѕРІРЅРёР№ РІРјС–СЃС‚ (Grid) -->
+  <main class="main-content">
+    <article class="game-card">
+      <h2>Cyber Arena</h2>
+      <p>Р¤СѓС‚СѓСЂРёСЃС‚РёС‡РЅРёР№ РѕРЅР»Р°Р№РЅ-С€СѓС‚РµСЂ Р· РєС–Р±РµСЂРїР°РЅРєРѕРІРѕСЋ Р°С‚РјРѕСЃС„РµСЂРѕСЋ.</p>
+      <button>Р“СЂР°С‚Рё</button>
+    </article>
+    
+    <article class="game-card">
+      <h2>Magic Quest</h2>
+      <p>RPG Р· РІС–РґРєСЂРёС‚РёРј СЃРІС–С‚РѕРј, РјР°РіС–С”СЋ С– РґСЂРµРІРЅС–РјРё С‚Р°С”РјРЅРёС†СЏРјРё.</p>
+      <button>Р“СЂР°С‚Рё</button>
+    </article>
 
-    <section>
-      <h2>ТОП ігор</h2>
-      <ul>
-        <li>Valorant</li>
-        <li>Minecraft</li>
-        <li>Cyberpunk 2077</li>
-      </ul>
-    </section>
+    <article class="game-card">
+      <h2>Speed Rush</h2>
+      <p>Р“РѕРЅРєРё Сѓ РІРёСЃРѕРєРѕРјСѓ С‚РµРјРїС– Р· СЂРµР°Р»С–СЃС‚РёС‡РЅРѕСЋ С„С–Р·РёРєРѕСЋ.</p>
+      <button>Р“СЂР°С‚Рё</button>
+    </article>
   </main>
 
-  <!-- Підвал -->
-  <footer>
-    <p>&copy; 2025 Геймерський сайт. Усі права захищено.</p>
+  <!-- Р‘Р»РѕРє РґРѕРґР°С‚РєРѕРІРѕС— С–РЅС„РѕСЂРјР°С†С–С— -->
+  <section class="content-block">
+    <h3>РћСЃС‚Р°РЅРЅС– РЅРѕРІРёРЅРё</h3>
+    <p>Р”РѕРґР°РЅРѕ РЅРѕРІРёР№ СЂРѕР·РґС–Р» PvP-СЂРµР¶РёРјС–РІ С‚Р° СЂРµР№С‚РёРЅРіРѕРІРёС… РјР°С‚С‡С–РІ.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; background-color: #111;">
+    <p>&copy; 2025 Game HUD. Р’СЃС– РїСЂР°РІР° Р·Р°С…РёС‰РµРЅРѕ.</p>
   </footer>
 
 </body>
