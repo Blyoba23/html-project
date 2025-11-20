@@ -1,7 +1,6 @@
 /* === ФОН + АНІМАЦІЯ === */
 body {
   background: url('https://images5.alphacoders.com/128/1284718.jpg') no-repeat center center fixed;
-  background-size: cover;
   animation: bgAnimation 30s linear infinite;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
@@ -239,3 +238,4 @@ footer {
     padding: 15px;
   }
 }
+
