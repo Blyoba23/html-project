@@ -23,6 +23,7 @@ body {
   padding: 10px 20px;
   position: fixed;
   width: 100%;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   top: 0;
   z-index: 1000;
@@ -238,4 +239,5 @@ footer {
     padding: 15px;
   }
 }
+
 
