@@ -1,0 +1,242 @@
+/* === ФОН + АНІМАЦІЯ === */
+body {
+  background: url('https://images5.alphacoders.com/128/1284718.jpg') no-repeat center center fixed;
+  animation: bgAnimation 30s linear infinite;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes bgAnimation {
+  0% { filter: hue-rotate(360deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* === НАВІГАЦІЯ === */
+
+.fixed-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.85);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #00ffcc;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Посилання */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Бургер */
+.menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 32px;
+  color: #00ffcc;
+  cursor: pointer;
+}
+
+/* Заголовок */
+header {
+  padding-top: 130px;
+  text-align: center;
+}
+
+.sticky-title {
+  position: sticky;
+  top: 60px;
+  background: rgba(0,0,0,0.85);
+  padding: 12px;
+  color: #00ffcc;
+  z-index: 999;
+  font-size: 36px;
+  backdrop-filter: blur(10px);
+}
+
+.absolute-banner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* === GRID === */
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 20px 30px;
+}
+
+.game-card {
+  background-color: #1e1e1e;
+  border: 2px solid #00ffcc;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 4px 10px rgba(0, 255, 204, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card h2 {
+  margin-top: 0;
+}
+
+.game-card button {
+  background-color: #00ffcc;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Додатковий блок */
+.content-block {
+  border: 2px solid #00ffcc;
+  padding: 20px;
+  margin: 20px 30px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: rgba(0,0,0,0.85);
+  margin-top: 30px;
+}
+
+/* === ТАБЛЕТИ (768px) === */
+@media (max-width: 992px) {
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .sticky-title {
+    font-size: 30px;
+  }
+
+  .main-content {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+/* === МОБІЛКИ (до 768px) === */
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 15px 0;
+    gap: 18px;
+    border-top: 2px solid #00ffcc;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  header {
+    padding-top: 160px;
+  }
+
+  .absolute-banner {
+    top: 95px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .content-block {
+    margin: 15px;
+  }
+}
+
+/* === МАЛІ МОБІЛКИ (480px) === */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .sticky-title {
+    font-size: 26px;
+  }
+
+  .game-card {
+    padding: 18px;
+  }
+
+  .game-card button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .content-block {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+

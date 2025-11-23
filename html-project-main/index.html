@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Game HUD</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <script src="scripts/script.js"></script>
+
+  <nav class="fixed-navbar">
+    <div class="logo">Game HUD</div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">☰</label>
+
+    <div class="auth">
+    <input id="login" placeholder="Login">
+    <input id="email" placeholder="Email">
+    <input id="phone" placeholder="Phone">
+    <button id="check">Перевірити</button>
+</div>
+
+
+    <div class="nav-links">
+      <a href="#">ГОЛОВНА</a>
+      <a href="#">ІГРИ</a>
+      <a href="#">СТАТИСТИКА</a>
+      <a href="#">ПРО НАС</a>
+      <a href="https://github.com/Blyoba23/html-project" target="_blank">GitHub</a>
+      <div class="dynamic-images"></div>
+    </div>
+  </nav>
+
+  <div class="absolute-banner">🔥 Знижки до -70%!</div>
+  <div class="api-photos"></div>
+
+  <header>
+    <h1 class="sticky-title">Game HUD</h1>
+    <p>Твій портал у світ ігор</p>
+  </header>
+
+  <main class="main-content">
+    <article class="game-card">
+      <h2>Cyber Arena</h2>
+      <p>Футуристичний онлайн-шутер з кіберпанковою атмосферою.</p>
+      <button>Грати</button>
+    </article>
+
+    <article class="game-card">
+      <h2>Magic Quest</h2>
+      <p>RPG з відкритим світом, магією і древніми таємницями.</p>
+      <button>Грати</button>
+    </article>
+
+    <article class="game-card">
+      <h2>Speed Rush</h2>
+      <p>Гонки у високому темпі з реалістичною фізикою.</p>
+      <button>Грати</button>
+    </article>
+  </main>
+
+  <section class="content-block">
+    <h3>Останні новини</h3>
+    <p>Додано новий розділ PvP-режимів та рейтингових матчів.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Game HUD. Всі права захищено.</p>
+  </footer>
+
+</body>
+</html>
